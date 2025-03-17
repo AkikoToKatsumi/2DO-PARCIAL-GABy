@@ -1,0 +1,102 @@
+/* Fuente y estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffe4e1, #ffb6c1);
+    color: #444;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Títulos */
+h1 {
+    color: #d63384;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #b82e6b;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Inputs con bordes suaves */
+input {
+    padding: 10px;
+    border: 2px solid #ff6b81;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #d63384;
+    box-shadow: 0 0 5px #d63384;
+}
+
+/* Botón con animación */
+button {
+    background: #ff6b81;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    background: #d63384;
+    transform: scale(1.05);
+}
+
+/* Lista de usuarios */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #ffb6c1;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul li:hover {
+    transform: scale(1.03);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
